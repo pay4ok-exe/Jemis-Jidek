@@ -1,4 +1,4 @@
-import potatoeIMG from "../assets/potatoes.jpeg";
+import potatoeIMG from '../assets/potatoes.jpeg';
 import pickleImg from "../assets/pickles.jpg";
 
 export const products = [
