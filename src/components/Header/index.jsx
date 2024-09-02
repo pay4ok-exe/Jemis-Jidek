@@ -1,5 +1,8 @@
 export default function Header(){
     return(
-        <div>Header</div>
+        <div>Header
+            <hr/>
+        </div>
+
     )
 }
