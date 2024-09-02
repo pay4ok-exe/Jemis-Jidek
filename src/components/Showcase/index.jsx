@@ -1,5 +1,6 @@
 import { products } from '../../data/products';
 import Product from './Product';
+import { add, remove} from '../../helper';
 
 export default function Showcase(){
     // console.log(products)
@@ -10,8 +11,8 @@ export default function Showcase(){
             flexWrap: 'wrap'
         }}>
 
-            {products.map((product) =>(
-                <Product item={product}/>
+            {products.map((product, index) =>(
+                <Product add={add} remove={remove} item={product} key={index}/>
             ))}
         </div>
     )
