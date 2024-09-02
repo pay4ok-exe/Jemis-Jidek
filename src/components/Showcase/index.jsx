@@ -10,7 +10,7 @@ export default function Showcase(){
             flexWrap: 'wrap'
         }}>
 
-            {products.map((product, index) =>(
+            {products.map((product) =>(
                 <Product item={product}/>
             ))}
         </div>

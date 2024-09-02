@@ -1,12 +1,12 @@
-export default function Product(props){
-    const product = props.item;
-    console.log(props);
+export default function Product({item}){
+    const {id, name, price, amountLeft, img} = item;
+    // console.log(props);
     return(
-        <div key={product.id}>
-            <p>{product.name}</p>
-            <p>{product.price}</p>
-            <p>{product.amountLeft}</p>
-            <img src={product.img} style={{width: '350px'}}/>
+        <div key={id}>
+            <p>{name}</p>
+            <p>{price}</p>
+            <p>{amountLeft}</p>
+            <img src={img} style={{width: '350px'}}/>
         </div>
     )
 }
