@@ -1,19 +1,18 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Showcase from "./components/Showcase";
-
 
 function App() {
   return (
-    <div style={{
-      display: 'grid',
-      gridTemplateRows: '10px 1fr 10px',
-      height: '100vh',
-      gap: '20px'
-    }}>
-      <Header/>
-      <Showcase/>
-      <Footer/>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateRows: "10px 1fr 10px",
+        height: "100vh",
+      }}>
+      <Header />
+      <Showcase />
+      <Footer />
     </div>
   );
 }
